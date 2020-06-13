@@ -9,3 +9,33 @@ table {
     background: #212529;
     box-shadow: 0 0 10px 0 #000;
 }
+
+td,
+th {
+    transition: 1s;
+    width: 150px;
+    height: 150px;
+    border: none;
+    font-size: 80px;
+    border-radius: 7px;
+    box-shadow: 0 0 3px 0 #000;
+    color: #ff8a00;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+th {
+    background: rgba(255, 255, 255, .1);
+    color: #fff;
+}
+
+td:hover {
+    background: rgba(255, 255, 255, .1);
+    font-size: 130px;
+    box-shadow: 0 0 3px 0 rgba(255, 255, 255, .1);
+}
+
+.log {
+    height: 50px;
+    font-size: 25px;
+}
