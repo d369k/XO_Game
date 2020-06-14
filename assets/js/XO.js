@@ -15,6 +15,8 @@ $(document).ready(function() {
     let pointer = "";
     let row = "";
     let player_text = "";
+    let PlayerX_score = 0;
+    let PlayerO_score = 0;
 
     // Game board array
     let game_board = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -106,6 +108,15 @@ $(document).ready(function() {
 
                 // print winner player in log box
                 $(".log").text("player(" + pointer + ") win.");
+                
+                // set score for player
+                if(pointer == "X"){
+                    PlayerX_score++;
+                    $(".Xscore").text(PlayerX_score);
+                }else{
+                    PlayerO_score++;
+                    $(".Oscore").text(PlayerO_score);
+                }
 
                 // reset board
                 reset_board();
